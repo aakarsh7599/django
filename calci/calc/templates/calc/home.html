@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Home page</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>Home</h1>
+        <form action={%url 'calc' %}>
+            <div class='radio'>
+                <label><input type='radio' name='optradio' value='+' checked>Add</label>
+            </div>
+            <div class='radio'>
+                <label><input type='radio' name='optradio' value='-' checked>Subtract</label>
+            </div>
+            <div class='radio'>
+                <label><input type='radio' name='optradio' value='/' checked>Divide</label>
+            </div>
+            <div class='radio'>
+                <label><input type='radio' name='optradio' value='X' checked>Multiply</label>
+            </div>
+            <br/>
+        <input type='text' name=text1>
+        <input type='text' name=text2>
+        <button type='submit' class='btn btn-primary'>Submit</button>
+        </form>
+    </body>
+</html>
